@@ -143,7 +143,7 @@ $usersResult = $stmt2->get_result();
             <ul class="user-list">
                 <?php while ($user = $usersResult->fetch_assoc()): ?>
                     <li>
-                        <a href="profile.php?id=<?php echo $user['username']; ?>">
+                        <a href="profile.php?owner=<?php echo $user['username']; ?>">
                             <?php echo htmlspecialchars($user['username']); ?>
                         </a>
 
